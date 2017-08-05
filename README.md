@@ -2,7 +2,7 @@
 
 [Conan.io](https://conan.io) package for [Boost.Serialization](https://github.com/Boostorg/Serialization) project
 
-The packages generated with this **conanfile** can be found in [Bintray](https://bintray.com/bincrafters/conan-public/Boost.Serialization%3Abincrafters).
+The packages generated with this **conanfile** can be found in [Bintray](https://bintray.com/bincrafters/public-conan/Boost.Serialization%3Abincrafters).
 
 ## For Users: Use this package
 
