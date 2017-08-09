@@ -3,7 +3,7 @@ from conans import ConanFile, tools, os
 class BoostSerializationConan(ConanFile):
     name = "Boost.Serialization"
     version = "1.64.0"
-    generators = "txt"
+    generators = "boost"
     url = "https://github.com/boostorg/serialization"
     description = "Please visit http://www.boost.org/doc/libs/1_64_0/libs/libraries.htm"
     license = "www.boost.org/users/license.html"
