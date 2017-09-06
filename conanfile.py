@@ -1,5 +1,6 @@
 from conans import ConanFile, tools, os
 
+
 class BoostSerializationConan(ConanFile):
     name = "Boost.Serialization"
     version = "1.64.0"
