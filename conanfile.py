@@ -1,4 +1,4 @@
-from conans import ConanFile, tools, os
+from conans import ConanFile
 
 
 class BoostSerializationConan(ConanFile):
@@ -7,7 +7,7 @@ class BoostSerializationConan(ConanFile):
     url = "https://github.com/bincrafters/conan-boost-serialization"
     description = "Please visit http://www.boost.org/doc/libs/1_65_1/libs/libraries.htm"
     license = "www.boost.org/users/license.html"
-    requires =  "Boost.Level11Group/1.65.1@bincrafters/testing"
+    requires =  "Boost.Level11Group/1.65.1@bincrafters/stable"
    
     def package_id(self):
         self.info.header_only()
