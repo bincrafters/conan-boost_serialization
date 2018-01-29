@@ -15,8 +15,8 @@ class BoostSerializationConan(ConanFile):
     is_header_only = False
 
     requires = (
-        "boost_package_tools/1.66.0@bincrafters/stable",
-        "boost_level11group/1.66.0@bincrafters/stable"
+        "boost_package_tools/1.66.0@bincrafters/testing",
+        "boost_level11group/1.66.0@bincrafters/testing"
     )
 
     # BEGIN
@@ -26,7 +26,7 @@ class BoostSerializationConan(ConanFile):
     short_paths = True
     generators = "boost"
     settings = "os", "arch", "compiler", "build_type"
-    build_requires = "boost_generator/1.66.0@bincrafters/stable"
+    build_requires = "boost_generator/1.66.0@bincrafters/testing"
 
     def package_id(self):
         getattr(self, "package_id_additional", lambda:None)()
