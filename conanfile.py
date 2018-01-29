@@ -19,6 +19,12 @@ class BoostSerializationConan(ConanFile):
         "boost_level11group/1.66.0@bincrafters/testing"
     )
 
+    def package_id_additional(self):
+        boost_deps_only = [dep_name for dep_name in self.info.requires.pkg_names if dep_name.startswith("boost_")]
+
+        for dep_name in boost_deps_only:
+            self.info.requires[dep_name].full_version_mode()
+
     # BEGIN
 
     description = "Please visit http://www.boost.org/doc/libs/1_66_0"
