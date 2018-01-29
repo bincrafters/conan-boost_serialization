@@ -8,14 +8,15 @@ class BoostSerializationConan(ConanFile):
     name = "boost_serialization"
     version = "1.66.0"
     url = "https://github.com/bincrafters/conan-boost_serialization"
-    
+    author = "Bincrafters <bincrafters@gmail.com>"
+    exports = ["LICENSE.md"]
     lib_short_names = ["serialization"]
     is_in_cycle_group = True
     is_header_only = False
 
     requires = (
-        "boost_package_tools/1.66.0@bincrafters/testing",
-        "boost_level11group/1.66.0@bincrafters/testing"
+        "boost_package_tools/1.66.0@bincrafters/stable",
+        "boost_level11group/1.66.0@bincrafters/stable"
     )
 
     # BEGIN
@@ -25,7 +26,7 @@ class BoostSerializationConan(ConanFile):
     short_paths = True
     generators = "boost"
     settings = "os", "arch", "compiler", "build_type"
-    build_requires = "boost_generator/1.66.0@bincrafters/testing"
+    build_requires = "boost_generator/1.66.0@bincrafters/stable"
 
     def package_id(self):
         getattr(self, "package_id_additional", lambda:None)()
