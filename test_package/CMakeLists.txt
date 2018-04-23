@@ -23,6 +23,7 @@ target_link_libraries(${CMAKE_PROJECT_NAME}
   CONAN_PKG::boost_optional
   CONAN_PKG::boost_predef
   CONAN_PKG::boost_preprocessor
+  CONAN_PKG::boost_serialization
   CONAN_PKG::boost_smart_ptr
   CONAN_PKG::boost_static_assert
   CONAN_PKG::boost_type_traits
